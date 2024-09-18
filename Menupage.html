@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Aussie Burgers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://ecs.gbca.edu.au/moodle/images/burger_logo.png"
+      type="image/x-icon"
+    />
+    <script>
+      function showdropdown() {
+        let navbar = document.querySelector(".navbar");
+        if (navbar.className == "navbar") navbar.classList.add("dropdown");
+        else navbar.classList.remove("dropdown");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6703ab5d3a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Menupage.css" />
+    <link rel="stylesheet" href="Navbar.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="http://ecs.gbca.edu.au/moodle/images/burger_logo.png" alt="" />
+      <h1>Best Aussie Burger</h1>
+    </div>
+    <div class="navbar">
+      <a href="homepage.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="navbar_group">
+        <div class="navbar_label">
+          <i class="fa-solid fa-cart-shopping"></i> Order Now
+        </div>
+        <div class="navbar_dropdown">
+          <a href="Menupage.html"> Menu </a>
+          <a href="FAQ.html"> Order FAQ </a>
+        </div>
+      </div>
+
+      <div class="navbar_group">
+        <div class="navbar_label"><i class="fa-solid fa-user"></i> Member</div>
+        <div class="navbar_dropdown">
+          <a href="Signuppage.html">Sign Up</a>
+          <a href="Login.html"> Login</a>
+          <a href="Benefits.html"> Benefits</a>
+          <a href="Privacy.html"> Data Privacy Policy</a>
+        </div>
+      </div>
+      <div class="navbar_group">
+        <div class="navbar_label">
+          <i class="fa-solid fa-address-card"></i> About Us
+        </div>
+        <div class="navbar_dropdown">
+          <a href="Aboutus.html"> About Us </a>
+
+          <a href="Contact.html"> Contact Us </a>
+          <a href="Sitemap.html"> Site Map</a>
+        </div>
+      </div>
+
+      <form class="search_box" action="">
+        <input type="text" />
+        <button class="btn">Search</button>
+      </form>
+      <div class="hamburger" onclick="showdropdown()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div>
+        <img src="http://ecs.gbca.edu.au/moodle/images/banner2.jpg" alt="" />
+      </div>
+
+      <div>
+        <h1>AUSSIE BEEF BURGER</h1>
+      </div>
+      <div>
+        <p>
+          It's not rocket science why this has been an Aussie favourite for over
+          40 years. It's just 100% Aussie beef, flame-grilled to perfection.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="item1">
+        <img
+          class="image1"
+          src="http://ecs.gbca.edu.au/moodle/images/menu2.webp"
+          alt=""
+        />
+        <h1>Flame Grilled Burgers</h1>
+      </div>
+
+      <div class="item2">
+        <img
+          class="image2"
+          src="http://ecs.gbca.edu.au/moodle/images/menu1.webp"
+          alt=""
+        />
+        <h1>Family Bundles</h1>
+      </div>
+      <div class="item3">
+        <img src="http://ecs.gbca.edu.au/moodle/images/menu3.webp" alt="" />
+        <h1>Sides</h1>
+      </div>
+      <div class="item4">
+        <img src="http://ecs.gbca.edu.au/moodle/images/menu5.webp" alt="" />
+        <h1>Sweets</h1>
+      </div>
+
+      <div class="item5">
+        <img src="http://ecs.gbca.edu.au/moodle/images/menu6.webp" alt="" />
+        <h1>Chicken & More</h1>
+      </div>
+      <div class="item6">
+        <img
+          class="image6"
+          src="http://ecs.gbca.edu.au/moodle/images/menu4.webp"
+          alt=""
+        />
+
+        <h1>Drinks & Cofee</h1>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>CONNECT WITH US</h2>
+      <div class="footerimage">
+        <img src="http://ecs.gbca.edu.au/moodle/images/facebook.svg" alt="" />
+        <img src="http://ecs.gbca.edu.au/moodle/images/instagram.svg" alt="" />
+        <img src="http://ecs.gbca.edu.au/moodle/images/twitter.svg" alt="" />
+        <img src="http://ecs.gbca.edu.au/moodle/images/youtube.svg" alt="" />
+      </div>
+
+      <h3>Copyright@2023 Best Aussie Burgers</h3>
+    </div>
+  </body>
+</html>

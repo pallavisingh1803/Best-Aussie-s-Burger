@@ -1,0 +1,109 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(4, 150px) 1fr;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar a,
+.navbar_label {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+}
+.navbar a:hover,
+.navbar_label:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.search_box {
+  text-align: right;
+  padding-right: 10px;
+}
+.search_box input {
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+.search_box button {
+  margin-top: 10px;
+  height: 33px;
+  color: black;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: gold;
+}
+
+.hamburger {
+  color: white;
+  padding: 15px;
+  display: none;
+}
+
+.navbar_label {
+  color: white;
+}
+
+.navbar_dropdown {
+  position: absolute;
+
+  background-color: rgb(236, 201, 5);
+  width: 150px;
+  display: none;
+  z-index: 1;
+}
+.navbar_group:hover .navbar_dropdown {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    grid-template-columns: 1fr 50px;
+  }
+  .navbar a,
+  .search_box,
+  .navbar_label {
+    text-align: left;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  video {
+    grid-row: 1;
+  }
+  .hamburger {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+
+    z-index: 1;
+  }
+
+  .courses,
+  .navbar_group,
+  .login {
+    grid-column: 1 / span 2;
+  }
+
+  .navbar a:not(:first-child),
+  .navbar .search_box,
+  .navbar .navbar_group {
+    display: none;
+  }
+
+  .navbar.dropdown a:not(:first-child),
+  .navbar.dropdown .search_box,
+  .navbar.dropdown .navbar_group {
+    display: block;
+  }
+}
