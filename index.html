@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function showdropdown() {
+        let navbar = document.querySelector(".navbar");
+        if (navbar.className == "navbar") navbar.classList.add("dropdown");
+        else navbar.classList.remove("dropdown");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/6703ab5d3a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="Navbar.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="https://bestaussieburgers.com/images/burger_logo.png" alt="" />
+      <h1>Best Aussie Burger</h1>
+    </div>
+    <div class="navbar">
+      <a href="homepage.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="navbar_group">
+        <div class="navbar_label">
+          <i class="fa-solid fa-cart-shopping"></i> Order Now
+        </div>
+        <div class="navbar_dropdown">
+          <a href="Menupage.html"> Menu </a>
+          <a href="FAQ.html"> Order FAQ </a>
+        </div>
+      </div>
+
+      <div class="navbar_group">
+        <div class="navbar_label"><i class="fa-solid fa-user"></i> Member</div>
+        <div class="navbar_dropdown">
+          <a href="Signuppage.html">Sign Up</a>
+          <a href="Login.html"> Login</a>
+          <a href="Benefits.html"> Benefits</a>
+          <a href="Privacy.html"> Data Privacy Policy</a>
+        </div>
+      </div>
+      <div class="navbar_group">
+        <div class="navbar_label">
+          <i class="fa-solid fa-address-card"></i> About Us
+        </div>
+        <div class="navbar_dropdown">
+          <a href="Aboutus.html"> About Us </a>
+
+          <a href="Contact.html"> Contact Us </a>
+          <a href="Sitemap.html"> Site Map</a>
+        </div>
+      </div>
+
+      <form class="search_box" action="">
+        <input type="text" aria-label="search input" />
+        <button class="btn">Search</button>
+      </form>
+      <div class="hamburger" onclick="showdropdown()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div>
+        <img src="https://bestaussieburgers.com/images/banner1.jpg" alt="" />
+      </div>
+
+      <div>
+        <h1>WHAT'S NEW</h1>
+      </div>
+      <div>
+        <p>
+          “Find out what's flame-grilling now! Discover the latest menu items
+          and promotions. Better get to it, for a short time only.”
+        </p>
+      </div>
+    </div>
+
+    <div class="mainpage">
+      <div class="item">
+        <a href="itempage.html"
+          ><img
+            src="https://bestaussieburgers.com/images/new_item1.png"
+            alt=""
+          />
+          <h1>BACONATOR DELUX</h1></a
+        >
+      </div>
+
+      <div class="item">
+        <a href=""
+          ><img
+            src="https://bestaussieburgers.com/images/new_item2.png"
+            alt=""
+          />
+          <h1>BACONATOR FRIED CHICKEN</h1></a
+        >
+      </div>
+      <div class="item">
+        <a href=""
+          ><img
+            src="https://bestaussieburgers.com/images/new_item3.png"
+            alt=""
+          />
+          <h1>POP'N FEAST BUNDLE LARGE</h1></a
+        >
+      </div>
+      <div class="item">
+        <a href=""
+          ><img
+            src="https://bestaussieburgers.com/images/new_item4.png"
+            alt=""
+          />
+          <h1>BACONATOR GRILLED CHICKEN</h1></a
+        >
+      </div>
+
+      <div class="item">
+        <a href=""
+          ><img
+            src="https://bestaussieburgers.com/images/new_item5.png"
+            alt=""
+          />
+          <h1>VEGAN AUSSIE CHEESE</h1></a
+        >
+      </div>
+      <div class="item">
+        <a href=""
+          ><img
+            src="https://bestaussieburgers.com/images/new_item6.png"
+            alt=""
+          />
+          <h1>AUSSIE'S FRIED CHICKEN CLASSIC & POP'N</h1></a
+        >
+      </div>
+      <div class="item">
+        <a href="">
+          <img
+            src="https://bestaussieburgers.com/images/new_item7.png"
+            alt=""
+          />
+          <h1>POPN' CHICK'N CARRY CUP</h1></a
+        >
+      </div>
+      <div class="item">
+        <a href="">
+          <img
+            src="https://bestaussieburgers.com/images/new_item8.png"
+            alt=""
+          />
+          <h1>FROZEN SOUR FIZZ TINGLE SPIDER</h1></a
+        >
+      </div>
+    </div>
+    <div class="footer">
+      <h2>CONNECT WITH US</h2>
+      <div class="footerimage">
+        <img src="https://bestaussieburgers.com/images/facebook.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/instagram.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/twitter.svg" alt="" />
+        <img src="https://bestaussieburgers.com/images/youtube.svg" alt="" />
+      </div>
+      <h3>Copyright@2023 Best Aussie Burgers</h3>
+    </div>
+  </body>
+</html>
